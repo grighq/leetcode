@@ -6,9 +6,6 @@ import (
 )
 
 func longestCommonPrefix(strs []string) string {
-	if len(strs) == 1 {
-		return strs[0]
-	}
 	slices.Sort(strs)
 	prefix := strs[0]
 	for prefix != "" {
