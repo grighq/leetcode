@@ -8,6 +8,7 @@ An input string is valid if:
 2. Open brackets must be closed in the correct order.
 3. Every close bracket has a corresponding open bracket of the same type.
 
+
 ##### Example 1:
 
 > **Input**: s = "()"
@@ -34,7 +35,7 @@ An input string is valid if:
 > **Output**: false
 
 
-**Constraints**:
+##### Constraints:
 
 * ``1 <= s.length <= 104``
 * ``s`` consists of parentheses only ``'()[]{}'``.
