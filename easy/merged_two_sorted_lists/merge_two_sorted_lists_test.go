@@ -6,42 +6,42 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMergedTwoLists(t *testing.T) {
-	list1 := sliceToList([]int{1, 2, 4})
-	list2 := sliceToList([]int{1, 3, 4})
-	output := listToSlice(mergeTwoLists(list1, list2))
+func TestMergeTwoLists(t *testing.T) {
+	cases := []struct {
+		list1    []int
+		list2    []int
+		expected []int
+	}{
+		{[]int{}, []int{}, []int{}},
+		{[]int{}, []int{0}, []int{0}},
+		{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}},
+	}
 
-	list1 = sliceToList([]int{1, 2, 4})
-	list2 = sliceToList([]int{1, 3, 4})
-	outputRecursion := listToSlice(mergeTwoListsRecursion(list1, list2))
+	for _, c := range cases {
+		l1 := sliceToList(c.list1)
+		l2 := sliceToList(c.list2)
+		output := listToSlice(mergeTwoLists(l1, l2))
+		assert.Equal(t, c.expected, output)
+	}
+}
 
-	expected := []int{1, 1, 2, 3, 4, 4}
-	assert.Equal(t, expected, output)
-	assert.Equal(t, expected, outputRecursion)
+func TestMergeTwoListsRecursion(t *testing.T) {
+	cases := []struct {
+		list1    []int
+		list2    []int
+		expected []int
+	}{
+		{[]int{}, []int{}, []int{}},
+		{[]int{}, []int{0}, []int{0}},
+		{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}},
+	}
 
-	list1 = sliceToList([]int{})
-	list2 = sliceToList([]int{})
-	output = listToSlice(mergeTwoLists(list1, list2))
-
-	list1 = sliceToList([]int{})
-	list2 = sliceToList([]int{})
-	outputRecursion = listToSlice(mergeTwoListsRecursion(list1, list2))
-
-	expected = []int{}
-	assert.Equal(t, expected, output)
-	assert.Equal(t, expected, outputRecursion)
-
-	list1 = sliceToList([]int{})
-	list2 = sliceToList([]int{0})
-	output = listToSlice(mergeTwoLists(list1, list2))
-
-	list1 = sliceToList([]int{})
-	list2 = sliceToList([]int{0})
-	outputRecursion = listToSlice(mergeTwoListsRecursion(list1, list2))
-
-	expected = []int{0}
-	assert.Equal(t, expected, output)
-	assert.Equal(t, expected, outputRecursion)
+	for _, c := range cases {
+		l1 := sliceToList(c.list1)
+		l2 := sliceToList(c.list2)
+		output := listToSlice(mergeTwoListsRecursion(l1, l2))
+		assert.Equal(t, c.expected, output)
+	}
 }
 
 func sliceToList(nums []int) *ListNode {
