@@ -6,17 +6,17 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMergeTwoLists(t *testing.T) {
-	cases := []struct {
-		list1    []int
-		list2    []int
-		expected []int
-	}{
-		{[]int{}, []int{}, []int{}},
-		{[]int{}, []int{0}, []int{0}},
-		{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}},
-	}
+var cases = []struct {
+	list1    []int
+	list2    []int
+	expected []int
+}{
+	{[]int{}, []int{}, []int{}},
+	{[]int{}, []int{0}, []int{0}},
+	{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}},
+}
 
+func TestMergeTwoLists(t *testing.T) {
 	for _, c := range cases {
 		l1 := sliceToList(c.list1)
 		l2 := sliceToList(c.list2)
@@ -26,16 +26,6 @@ func TestMergeTwoLists(t *testing.T) {
 }
 
 func TestMergeTwoListsRecursion(t *testing.T) {
-	cases := []struct {
-		list1    []int
-		list2    []int
-		expected []int
-	}{
-		{[]int{}, []int{}, []int{}},
-		{[]int{}, []int{0}, []int{0}},
-		{[]int{1, 2, 4}, []int{1, 3, 4}, []int{1, 1, 2, 3, 4, 4}},
-	}
-
 	for _, c := range cases {
 		l1 := sliceToList(c.list1)
 		l2 := sliceToList(c.list2)
