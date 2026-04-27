@@ -1,0 +1,15 @@
+package removeelement
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+func TestRemoveElement(t *testing.T) {
+	assert.Equal(t, 0, removeElement([]int{}, 5))
+	assert.Equal(t, 1, removeElement([]int{1}, 5))
+	assert.Equal(t, 0, removeElement([]int{3}, 3))
+	assert.Equal(t, 2, removeElement([]int{3, 2, 2, 3}, 3))
+	assert.Equal(t, 5, removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
+}
