@@ -1,4 +1,4 @@
-package findindexofthefirstoccurenceinastring
+package findindexofthefirstoccurrenceinastring
 
 import (
 	"testing"
