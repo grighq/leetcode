@@ -1,11 +1,10 @@
 package searchinsertposition
 
 func searchInsert(nums []int, target int) int {
-	start := 0
-	end := len(nums) - 1
+	start, end := 0, len(nums)-1
 
 	for start <= end {
-		mid := (start + end) / 2
+		mid := start + (end-start)/2
 		if nums[mid] == target {
 			return mid
 		}
