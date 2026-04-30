@@ -1,7 +1,6 @@
 # Palindrome Number
 
-Given an integer ``x``, return ``true`` if ``x`` is a ***palindrome***, and ``false`` otherwise.
-
+Given an integer `x`, return `true` if `x` is a **_palindrome_**, and `false` otherwise.
 
 ##### Example 1:
 
@@ -21,7 +20,6 @@ Given an integer ``x``, return ``true`` if ``x`` is a ***palindrome***, and ``fa
 > **Output**: false
 > **Explanation**: Reads 01 from right to left. Therefore it is not a palindrome.
 
-
 ##### Constraints:
 
-* ``-231 <= x <= 231 - 1``
+- `-231 <= x <= 231 - 1`

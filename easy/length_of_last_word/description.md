@@ -1,8 +1,8 @@
 # Length Of Last Word
 
-Given a string ``s`` consisting of words and spaces, return the *length of the **last** word in the string*.
+Given a string `s` consisting of words and spaces, return the _length of the **last** word in the string_.
 
-A **word** is a maximal ***substring*** consisting of non-space characters only.
+A **word** is a maximal **_substring_** consisting of non-space characters only.
 
 ##### Example 1:
 
@@ -12,7 +12,7 @@ A **word** is a maximal ***substring*** consisting of non-space characters only.
 
 ##### Example 2:
 
-> **Input**: s = "   fly me   to   the moon  "
+> **Input**: s = " fly me to the moon "
 > **Output**: 4
 > **Explanation**: The last word is "moon" with length 4.
 
@@ -21,10 +21,9 @@ A **word** is a maximal ***substring*** consisting of non-space characters only.
 > **Input**: s = "luffy is still joyboy"
 > **Output**: 6
 > **Explanation**: The last word is "joyboy" with length 6.
- 
 
 ##### Constraints:
 
-* ``1 <= s.length <= 104``
-* ``s`` consists of only English letters and spaces ``' '``.
-* There will be at least one word in ``s``.
+- `1 <= s.length <= 104`
+- `s` consists of only English letters and spaces `' '`.
+- There will be at least one word in `s`.
