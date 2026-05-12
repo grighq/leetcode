@@ -1,9 +1,10 @@
 package nthtribonaccinumber
 
 func tribonacci(n int) int {
-	prev3, prev2, prev1 := 0, 1, 1
+	curr, next1, next2 := 0, 1, 1
 	for range n {
-		prev3, prev2, prev1 = prev2, prev1, prev3+prev2+prev1
+		curr, next1, next2 = next1, next2, curr+next1+next2
 	}
-	return prev3
+
+	return curr
 }
