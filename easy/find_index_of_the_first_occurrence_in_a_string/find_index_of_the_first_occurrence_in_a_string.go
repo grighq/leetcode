@@ -1,9 +1,9 @@
 package findindexofthefirstoccurrenceinastring
 
 func strStr(haystack, needle string) int {
-	for i := 0; len(needle) <= len(haystack[i:]); i++ {
-		if needle == haystack[i:i+len(needle)] {
-			return i
+	for k := len(needle); k <= len(haystack); k++ {
+		if haystack[k-len(needle):k] == needle {
+			return k - len(needle)
 		}
 	}
 	return -1
