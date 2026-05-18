@@ -27,9 +27,6 @@ func TestHasCycle(t *testing.T) {
 	}
 }
 
-// sliceToListWithCycle creates a linked list from nums and links the
-// tail's Next to the node at the given position (0-based). If pos is -1
-// or the list is empty, no cycle is created.
 func sliceToListWithCycle(nums []int, pos int) *ListNode {
 	if len(nums) == 0 {
 		return nil
