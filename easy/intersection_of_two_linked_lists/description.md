@@ -44,7 +44,7 @@ The judge will then create the linked structure based on these inputs and pass t
 
 ##### Example 3:
 
-[example3](./example3.png)
+![example3](./example3.png)
 
 > **Input**: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
 > **Output**: No intersection
