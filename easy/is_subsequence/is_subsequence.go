@@ -1,15 +1,13 @@
 package issubsequence
 
 func isSubsequence(s, t string) bool {
-	i, j := 0, 0
-	for i < len(s) && j < len(t) {
-		if s[i] == t[j] {
-			i++
-			j++
-		} else {
-			j++
+	p1, p2 := 0, 0
+	for p1 < len(s) && p2 < len(t) {
+		if s[p1] == t[p2] {
+			p1++
 		}
+		p2++
 	}
 
-	return i == len(s)
+	return p1 == len(s)
 }
