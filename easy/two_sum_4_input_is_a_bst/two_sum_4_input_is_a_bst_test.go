@@ -31,8 +31,6 @@ func TestFindTarget(t *testing.T) {
 	}
 }
 
-// sliceToTree builds a binary tree from a level-order slice.
-// A value of 0 represents a nil node.
 func sliceToTree(values []int) *TreeNode {
 	if len(values) == 0 {
 		return nil
