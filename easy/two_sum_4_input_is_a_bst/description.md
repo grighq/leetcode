@@ -4,10 +4,14 @@ Given the `root` of a binary search tree and an integer `k`, return `true` _if t
 
 ##### Example 1:
 
+![example1](./example1.jpg)
+
 > **Input**: root = [5,3,6,2,4,null,7], k = 9
 > **Output**: true
 
 ##### Example 2:
+
+![example2](./example2.jpg)
 
 > **Input**: root = [5,3,6,2,4,null,7], k = 28
 > **Output**: false
