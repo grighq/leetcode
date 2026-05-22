@@ -4,6 +4,8 @@ Given the `head` of a linked list and an integer `val`, remove all the nodes of 
 
 ##### Example 1:
 
+![example1](./example1.jpg)
+
 > **Input**: head = [1,2,6,3,4,5,6], val = 6
 > **Output**: [1,2,3,4,5]
 
