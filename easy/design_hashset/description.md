@@ -29,5 +29,5 @@ Implement `MyHashSet` class:
 
 ##### Constraints:
 
-- `0 <= key <= 10^6^`
+- `0 <= key <= 10^6`
 - At most `10^4^` calls will be made to `add`, `remove`, and `contains`.
