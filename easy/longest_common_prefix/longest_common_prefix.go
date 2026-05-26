@@ -1,18 +1,14 @@
 package longestcommonprefix
 
-import (
-	"slices"
-	"strings"
-)
-
 func longestCommonPrefix(strs []string) string {
-	slices.Sort(strs)
-	prefix := strs[0]
-	for prefix != "" {
-		if strings.Index(strs[len(strs)-1], prefix) == 0 {
-			return prefix
+	for i := 0; i < len(strs[0]); i++ {
+		char := strs[0][i]
+		for _, s := range strs[1:] {
+			if i >= len(s) || char != s[i] {
+				return strs[0][:i]
+			}
 		}
-		prefix = prefix[:len(prefix)-1]
 	}
-	return prefix
+
+	return strs[0]
 }
