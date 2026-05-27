@@ -5,9 +5,8 @@ func majorityElement(nums []int) int {
 	for _, num := range nums[1:] {
 		if count == 0 {
 			res = num
-		}
-
-		if res == num {
+			count = 1
+		} else if res == num {
 			count++
 		} else {
 			count--
