@@ -7,16 +7,19 @@ Given the `head` of a linked list and an integer `val`, remove all the nodes of 
 ![example1](./example1.jpg)
 
 > **Input**: head = [1,2,6,3,4,5,6], val = 6
+>
 > **Output**: [1,2,3,4,5]
 
 ##### Example 2:
 
 > **Input**: head = [], val = 1
+>
 > **Output**: []
 
 ##### Example 3:
 
 > **Input**: head = [7,7,7,7], val = 7
+>
 > **Output**: []
 
 ##### Constraints:

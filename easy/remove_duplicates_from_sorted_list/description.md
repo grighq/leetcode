@@ -7,6 +7,7 @@ Given the `head` of a sorted linked list, _delete all duplicates such that each 
 ![list1](./list1.jpg)
 
 > **Input**: head = [1,1,2]
+>
 > **Output**: [1,2]
 
 ##### Example 2:
@@ -14,6 +15,7 @@ Given the `head` of a sorted linked list, _delete all duplicates such that each 
 ![list1](./list2.jpg)
 
 > **Input**: head = [1,1,2,3,3]
+>
 > **Output**: [1,2,3]
 
 ##### Constraints:

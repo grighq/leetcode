@@ -9,6 +9,7 @@ Two binary trees are considered the same if they are structurally identical, and
 ![example1](./example1.jpg)
 
 > **Input**: p = [1,2,3], q = [1,2,3]
+>
 > **Output**: true
 
 ##### Example 2:
@@ -16,6 +17,7 @@ Two binary trees are considered the same if they are structurally identical, and
 ![example2](./example2.jpg)
 
 > **Input**: p = [1,2], q = [1,null,2]
+>
 > **Output**: false
 
 ##### Example 3:
@@ -23,6 +25,7 @@ Two binary trees are considered the same if they are structurally identical, and
 ![example3](./example3.jpg)
 
 > **Input**: p = [1,2,1], q = [1,1,2]
+>
 > **Output**: false
 
 ##### Constraints:

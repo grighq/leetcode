@@ -7,6 +7,7 @@ Given the `head` of a singly linked list, return `true` _if it is a **palindrome
 ![example1](./example1.jpg)
 
 > **Input**: head = [1,2,2,1]
+>
 > **Output**: true
 
 ##### Example 2:
@@ -14,6 +15,7 @@ Given the `head` of a singly linked list, return `true` _if it is a **palindrome
 ![example2](./example2.jpg)
 
 > **Input**: head = [1,2]
+>
 > **Output**: false
 
 ##### Constraints:

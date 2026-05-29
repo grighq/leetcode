@@ -7,19 +7,25 @@ Given strings `sequence` and `word`, return the **_maximum `k`-repeating value_*
 ##### Example 1:
 
 > **Input**: sequence = "ababc", word = "ab"
+>
 > **Output**: 2
+>
 > **Explanation**: "abab" is a substring in "ababc".
 
 ##### Example 2:
 
 > **Input**: sequence = "ababc", word = "ba"
+>
 > **Output**: 1
+>
 > **Explanation**: "ba" is a substring in "ababc". "baba" is not a substring in "ababc".
 
 ##### Example 3:
 
 > **Input**: sequence = "ababc", word = "ac"
+>
 > **Output**: 0
+>
 > **Explanation**: "ac" is not a substring in "ababc".
 
 ##### Constraints:
