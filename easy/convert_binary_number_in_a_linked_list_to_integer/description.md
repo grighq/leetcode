@@ -11,12 +11,15 @@ The **most significant bit** is at the head of the linked list.
 ![exapmle1](./example1.png)
 
 > **Input**: head = [1,0,1]
+>
 > **Output**: 5
+>
 > **Explanation**: (101) in base 2 = (5) in base 10
 
 ##### Example 2:
 
 > **Input**: head = [0]
+>
 > **Output**: 0
 
 ##### Constraints:

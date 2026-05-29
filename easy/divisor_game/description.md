@@ -14,13 +14,17 @@ Return `true` _if and only if Alice wins the game, assuming both players play op
 ##### Example 1:
 
 > **Input**: n = 2
+>
 > **Output**: true
+>
 > **Explanation**: Alice chooses 1, and Bob has no more moves.
 
 ##### Example 2:
 
 > **Input**: n = 3
+>
 > **Output**: false
+>
 > **Explanation**: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
 
 ##### Constraints:
