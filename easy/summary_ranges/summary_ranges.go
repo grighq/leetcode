@@ -1,23 +1,25 @@
 package summaryranges
 
-import "fmt"
+import (
+	"strconv"
+)
 
 func summaryRanges(nums []int) []string {
 	p := 0
-	strs := []string{}
+	ranges := []string{}
 	for i := 1; i <= len(nums); i++ {
-		if i != len(nums) && nums[i]-nums[i-1] == 1 {
+		if i != len(nums) && nums[i] == nums[i-1]+1 {
 			continue
 		}
 
 		if i-p == 1 {
-			strs = append(strs, fmt.Sprintf("%d", nums[p]))
+			ranges = append(ranges, strconv.Itoa(nums[p]))
 		} else {
-			strs = append(strs, fmt.Sprintf("%d->%d", nums[p], nums[i-1]))
+			ranges = append(ranges, strconv.Itoa(nums[p])+"->"+strconv.Itoa(nums[i-1]))
 		}
 
 		p = i
 	}
 
-	return strs
+	return ranges
 }
