@@ -22,7 +22,6 @@ Given an integer `n`, return _an array `ans` of length `n + 1` such that for eac
 > **Output**: [0,1,1,2,1,2]
 >
 > **Explanation**:
->
 > 0 --> 0
 >
 > 1 --> 1

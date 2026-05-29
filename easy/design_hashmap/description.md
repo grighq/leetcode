@@ -22,7 +22,6 @@ Implement the `MyHashMap` class:
 > [null, null, null, 1, -1, null, 1, null, -1]
 >
 > **Explanation**
->
 > MyHashMap myHashMap = new MyHashMap();
 >
 > myHashMap.put(1, 1); // The map is now [[1,1]]
