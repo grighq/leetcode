@@ -9,7 +9,6 @@ Given an integer array `nums`, return `true` if any value appears **at least twi
 > **Output**: true
 >
 > **Explanation**:
->
 > The element 1 occurs at the indices 0 and 3.
 
 ##### Example 2:
@@ -19,7 +18,6 @@ Given an integer array `nums`, return `true` if any value appears **at least twi
 > **Output**: false
 >
 > **Explanation**:
->
 > All elements are distinct.
 
 ##### Example 3:
