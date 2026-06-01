@@ -25,3 +25,21 @@ func intersection(nums1, nums2 []int) []int {
 
 	return res
 }
+
+// func intersection(nums1, nums2 []int) []int {
+// 	res := []int{}
+// 	m := make(map[int]struct{}, len(nums1))
+//
+// 	for _, num := range nums1 {
+// 		m[num] = struct{}{}
+// 	}
+//
+// 	for _, num := range nums2 {
+// 		if _, ok := m[num]; ok {
+// 			res = append(res, num)
+// 			delete(m, num)
+// 		}
+// 	}
+//
+// 	return res
+// }
