@@ -8,8 +8,14 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 		} else if i+1 == len(flowerbed) || flowerbed[i+1] != 1 {
 			freePlots++
 			i++
+		} else {
+			i += 2
+		}
+
+		if freePlots >= n {
+			return true
 		}
 	}
 
-	return freePlots >= n
+	return false
 }
