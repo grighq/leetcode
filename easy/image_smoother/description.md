@@ -21,6 +21,8 @@ Given an `m x n` integer matrix `img` representing the grayscale of an image, re
 
 ##### Example 2:
 
+![example2](./example2.jpg)
+
 > **Input**: img = [[100,200,100],[200,50,200],[100,200,100]]
 >
 > **Output**: [[137,141,137],[141,138,141],[137,141,137]]
