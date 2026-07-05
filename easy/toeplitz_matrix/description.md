@@ -15,7 +15,9 @@ A matrix is **Toeplitz** if every diagonal from top-left to bottom-right has the
 > **Explanation**:
 >
 > In the above grid, the diagonals are:
+>
 > "[9]", "[5, 5]", "[1, 1, 1]", "[2, 2, 2]", "[3, 3]", "[4]".
+>
 > In each diagonal all elements are the same, so the answer is True.
 
 ##### Example 2:
