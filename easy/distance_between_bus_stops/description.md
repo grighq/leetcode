@@ -8,7 +8,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 ##### Example 1
 
-[example1](./example1.jpg)
+![example1](./example1.jpg)
 
 > **Input**: distance = [1,2,3,4], start = 0, destination = 1
 >
@@ -18,7 +18,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 ##### Example 2
 
-[example2](./example2.jpg)
+![example2](./example2.jpg)
 
 > **Input**: distance = [1,2,3,4], start = 0, destination = 2
 >
@@ -28,7 +28,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 ##### Example 3:
 
-[example3](./example3.jpg)
+![example3](./example3.jpg)
 
 > **Input**: distance = [1,2,3,4], start = 0, destination = 3
 >
